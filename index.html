@@ -1,1 +1,141 @@
-<p>Why so serious?</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairui Ding's Personal Website</title>
+    <style> 
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+        }
+        .left {
+            text-align: center;
+        }
+        .left img {
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+        }
+        .left a {
+            margin: 0 10px;
+            color: white;
+        }
+        .right {
+            width: 50%;
+            color: white;
+            font-size: 18px;
+        }
+        .right a {
+            color: #a0c5ff;
+        }
+        .section {
+            padding: 50px;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #0066cc;
+        }
+        .section h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section ul ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .project img {
+            width: 300px;
+            margin-right: 20px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="left">
+                <img src="Kding.png" alt="Kairui Ding">
+                <div>
+                    <a href="https://github.com/Robot-K">Github</a> <span style="color: white;"> | </span>
+                    <a href="https://space.bilibili.com/470383193">Bilibili</a> <span style="color: white;"> | </span>
+                    <a href="https://www.youtube.com/channel/UCVuqea7Sbg04kjpIf-_Na3A">Youtube</a> <span style="color: white;"> | </span>
+                    <a href="mailto:dkr21@mails.tsinghua.edu.cn">Email</a>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Kairui Ding</h1>
+                <p>Hello world! I'm a third-year undergraduate at the <a href="https://www.hy.tsinghua.edu.cn/hyen/Academics/Lectures.htm">Tsian Excellence in Engineering Program</a> at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. Driven by a passion for reducing human labor through embodied-AI technology, I'm currently conducting research in robotics and AI at the <a href="https://air.tsinghua.edu.cn/en/">Institute for AI Industry Research (AIR)</a>. As a tech enthusiast, I also enjoy creating tech-related videos on <a href="https://space.bilibili.com/470383193">Bilibili</a> and <a href="https://www.youtube.com/channel/UC9Z1XWw1kmnvOJ6z1J1nJ8A">Youtube</a>. If you share a similar drive to dream big, please contact me!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <h3>2017-2021: High School</h3>
+                <ul>
+                    <li>Gold Medal in Chinese Physics Olympiad (CPHO), self-studied classical mechanics</li>
+                    <li>Ranked top 100 in National College Entrance Examination (Gaokao) in Jiangsu Province</li>
+                </ul>
+            </li>
+            <li>
+                <h3>2021-2025: Undergraduate</h3>
+                <ul>
+                    <li>Admitted to Tsian Excellence in Engineering Program</li>
+                    <li>Research experience in particle physics (CMS) and quantum computing (superconducting qubit design)</li>
+                    <li>Currently researching robotics and AI at the Institute for AI Industry Research (AIR)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="pregrasp.png" alt="PreAfford" width="300">
+            <div>
+                <h3><a href="https://air-discover.github.io/PreAfford/">PreAfford: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments</a></h3>
+                <p>Authors: <span class="highlight">Kairui Ding</span>, Boyuan Chen, Ruihai Wu, Yuyang Li, Zongzheng Zhang, Huan-ang Gao, Siqi Li, Yixin Zhu, Guyue Zhou, Hao Dong, Hao Zhao</p>
+                <p>PreAfford is a novel pre-grasping planning framework that improves adaptability across diverse environments and object types by utilizing point-level affordance representation and relay training. Validated on the ShapeNet-v2 dataset and real-world experiments, PreAfford offers a robust solution for manipulating ungraspable objects with two-finger grippers.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
